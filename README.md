@@ -42,14 +42,14 @@
 <body>
 
 <header>
-    <img src="<img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft logo">
     <h1>Microsoft</h1>
 </header>
 
 <main>
     <p>Windows Updates documentation and troubleshooting resources.</p>
   
-  [Windows Updates Network Connectivity issue](https://github.com/MicrosoftSetup/Microsoft/blob/main/WindowsUpdates)
+  [Windows Updates Network Connectivity issue](https://github.com/MicrosoftSetup/Microsoft/blob/main/WindowsUpdatesNetworConnectivity)
 
   [Windows Updates Error code - 0x80070002](https://github.com/MicrosoftSetup/Microsoft/blob/main/WindowsUpdates-0x80070002)
   
