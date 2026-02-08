@@ -1,0 +1,85 @@
+@echo off
+setlocal EnableExtensions EnableDelayedExpansion
+title Fix Microsoft Defender Update Error 0x80070002
+
+:: =========================
+:: ADMIN CHECK
+:: =========================
+net session >nul 2>&1
+if %errorlevel% neq 0 (
+    echo.
+    echo [ERROR] Please run this script as Administrator.
+    echo.
+    pause
+    exit /b 1
+)
+
+echo ==================================================
+echo Microsoft Defender + Windows Update Repair Script
+echo Safe mode - No registry or driver changes
+echo ==================================================
+echo.
+
+:: =========================
+:: STOP SERVICES
+:: =========================
+echo Stopping Windows Update services...
+net stop wuauserv >nul 2>&1
+net stop bits >nul 2>&1
+net stop cryptsvc >nul 2>&1
+net stop msiserver >nul 2>&1
+
+:: =========================
+:: RESET UPDATE CACHE
+:: =========================
+echo Resetting update cache...
+
+if exist "%windir%\SoftwareDistribution" (
+    ren "%windir%\SoftwareDistribution" SoftwareDistribution.old
+)
+
+if exist "%windir%\System32\catroot2" (
+    ren "%windir%\System32\catroot2" catroot2.old
+)
+
+:: =========================
+:: DEFENDER CHECK
+:: =========================
+set DEFENDER="%ProgramFiles%\Windows Defender\MpCmdRun.exe"
+if not exist %DEFENDER% (
+    echo.
+    echo [ERROR] Microsoft Defender not found.
+    echo Script aborted safely.
+    echo.
+    pause
+    exit /b 1
+)
+
+:: =========================
+:: RESET DEFENDER DEFINITIONS
+:: =========================
+echo Resetting Defender definitions...
+%DEFENDER% -RemoveDefinitions -All >nul 2>&1
+
+echo Updating Defender signatures...
+%DEFENDER% -SignatureUpdate
+
+:: =========================
+:: RESTART SERVICES
+:: =========================
+echo Restarting services...
+net start cryptsvc >nul 2>&1
+net start bits >nul 2>&1
+net start wuauserv >nul 2>&1
+net start msiserver >nul 2>&1
+
+echo.
+echo ==================================================
+echo DONE.
+echo Defender definitions refreshed and update cache reset.
+echo A reboot is recommended but not mandatory.
+echo ==================================================
+echo.
+
+pause
+exit /b 0
