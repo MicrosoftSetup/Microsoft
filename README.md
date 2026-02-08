@@ -49,9 +49,9 @@
     <p>Windows Updates documentation and troubleshooting resources.</p>
 </main>
 
-  <a href="https://github.com/MicrosoftSetup/Microsoft/blob/main/WindowsUpdatesNetworConnectivity">Windows Updates Network Connectivity issue</a><br>
+  <p><a href="https://github.com/MicrosoftSetup/Microsoft/blob/main/WindowsUpdatesNetworConnectivity">Windows Updates Network Connectivity issue</a></p><br>
 
-  <a href="https://github.com/MicrosoftSetup/Microsoft/blob/main/WindowsUpdates-0x80070002">Windows Updates Error code - 0x80070002</a><br>
+  <p><a href="https://github.com/MicrosoftSetup/Microsoft/blob/main/WindowsUpdates-0x80070002">Windows Updates Error code - 0x80070002</a></p><br>
   
 </body>
 </html>
