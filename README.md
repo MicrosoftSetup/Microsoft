@@ -52,8 +52,7 @@
     <br>
     <footer>
   <p style="font-size: 11px; color: #555;">
-    <u>Disclaimer</u>: Windows Update troubleshooting on this site is supported through automated scripts designed for Command Prompt (CMD) and PowerShell. These scripts are compatible with Windows 10 and Windows 11 (Home and Pro editions). Execution requires appropriate administrative privileges, and results may vary depending on system configuration and update state. The information provided on this site are for informational purposes only. Some actions may affect system stability or security and should be performed under proper technical supervision. The author is not responsible for data loss, system damage, or unintended consequences resulting from improper use. </p>
-<p> For additional assistance, please visit <a href="https://support.microsoft.com/en-us/contactus">Microsoft Support</a></p>
+    <u>Disclaimer</u>: Windows Update troubleshooting on this site is supported through automated scripts designed for Command Prompt (CMD) and PowerShell. These scripts are compatible with Windows 10 and Windows 11 (Home and Pro editions). Execution requires appropriate administrative privileges, and results may vary depending on system configuration and update state. The information provided on this site are for informational purposes only. Some actions may affect system stability or security and should be performed under proper technical supervision. The author is not responsible for data loss, system damage, or unintended consequences resulting from improper use. For additional assistance, please visit <a href="https://support.microsoft.com/en-us/contactus">Microsoft Support</a></p>
 </footer>
 
 </main>
