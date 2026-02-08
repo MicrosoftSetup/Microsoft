@@ -41,8 +41,8 @@
 <body>
 
 <header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft logo">
-    <h1>Microsoft</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Windows_logo_-_2021.svg" alt="Windows logo">
+    <h1>Windows 11 Home / Pro</h1>
 </header>
 
 <main>
