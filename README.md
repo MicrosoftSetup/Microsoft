@@ -1,2 +1,2 @@
-<a href>Windows Updates Network Connectivity issue <https://github.com/MicrosoftSetup/Microsoft/blob/main/WindowsUpdates></a>
-<a href>Windows Updates Error code- 0x80070002 <https://github.com/MicrosoftSetup/Microsoft/blob/main/WindowsUpdates-0x80070002></a>
+<a href "https://github.com/MicrosoftSetup/Microsoft/blob/main/WindowsUpdates">Windows Updates Network Connectivity issue</a>
+<a href "https://github.com/MicrosoftSetup/Microsoft/blob/main/WindowsUpdates-0x80070002">Windows Updates Error code-0x80070002</a>
